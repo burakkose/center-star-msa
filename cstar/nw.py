@@ -85,5 +85,3 @@ class NeedlemanWunsch:
         for i, cell in enumerate(self.dp[0]):
             cell.score = self.gap * i
             cell.tracebacks.append(NeedlemanWunsch.WEST)
-if __name__ == '__main__':
-    print(NeedlemanWunsch("MSKE", "SKE", [1, -1, -1]).nw())
